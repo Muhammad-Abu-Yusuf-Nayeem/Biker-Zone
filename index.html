@@ -40,7 +40,7 @@
         font-family: "Poppins", serif;
       }
       #faq * {
-        /* border: 1px solid black; */
+        border: 1px solid black;
       }
     </style>
   </head>
@@ -233,7 +233,7 @@
         </div>
         <!-- featured cards -->
         <div
-          class="grid lg:gap-32 md:gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12"
+          class="grid lg:gap-32 md:gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 space-y-16"
         >
           <!-- card 1 -->
           <div class="mx-auto">
@@ -414,7 +414,7 @@
       </div>
 
       <!-- frequently asked questions -->
-      <div class="py-16">
+      <div class="py-16 overflow-hidden">
         <div class="mb-8">
           <h2 class="font-bold text-4xl text-center lg:py-15 py-5">
             Frequently Asked <span class="text-bike-primary">Questions</span>
@@ -501,6 +501,30 @@
     </main>
 
     <!-- footer section -->
-    <footer></footer>
+    <footer class="footer bg-black text-neutral-content md:px-32 px-10 py-12">
+      <aside class="grid-flow-row items-center gap-4">
+        <ul class="flex gap-x-8">
+          <li>Download Now</li>
+          <li>License</li>
+        </ul>
+
+        <ul class="flex gap-x-8 w-64 lg:w-fit flex-wrap gap-y-5">
+          <li>about</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Careers</li>
+          <li>Help</li>
+          <li>Privacy Policy</li>
+        </ul>
+
+        <p class="hidden lg:block">© 2020 bike. All rights reserved</p>
+      </aside>
+      <nav class="flex flex-col md:place-self-center md:justify-self-end gap-4">
+        <p class="text-md">Get the App</p>
+        <img class="h-10" src="images/others/ios.png" alt="" />
+        <img class="h-10" src="images/others/android.png" alt="" />
+      </nav>
+      <p class="lg:hidden " >© 2020 bike. All rights reserved</p>
+    </footer>
   </body>
 </html>
